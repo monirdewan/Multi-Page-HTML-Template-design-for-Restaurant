@@ -1,0 +1,51 @@
+.special-menu-area{
+  background-color: $bg_gray;
+    .single-special-menu{
+        position: relative;
+        background-color: $white;
+        border: 1px solid $gray;
+        @include min-sm{
+            margin-top:30px;
+        }
+        img{
+            width: 100%;
+        }
+        p{
+            position: absolute;
+            top: 0;
+            left: 0;
+            color:$white;
+            background-color: $primary_color;
+            padding: 10px 30px;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .special-menu-content{
+            padding: 20px;
+            
+            ul{
+               
+                li{
+                    margin-bottom: 5px;
+                    padding-bottom: 5px;
+                    font-weight: bold;
+                    font-size: 16px;
+                    font-weight: 600;
+                    &:last-child{
+                        border-top: 1px dashed $black;
+                        padding-top: 15px;
+                        padding-bottom: 0;
+                        margin-bottom: 0;
+                    }
+                    span{
+                      float: right;
+                      color: $primary_color;
+                      font-style: italic;
+                      
+                    }
+                }
+            }
+        }
+    }
+}

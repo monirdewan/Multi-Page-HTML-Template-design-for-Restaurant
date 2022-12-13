@@ -1,0 +1,133 @@
+.banner-area{
+    .single-banner{
+        position: relative;
+        height: 100vh;
+        @include max-xs{
+            height: auto;
+        }
+        @include min-sm{
+            height: 50vh;
+        }
+        @include min-md{
+            height: 50vh;
+        }
+        @include min-lg{
+            height: 50vh;
+        }
+        .banner-content{
+            height: 100vh;
+            color: $white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            @include max-xs{
+                height: auto;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            @include min-sm{
+                height: 50vh;
+            }
+            @include min-md{
+                height: 50vh;
+            }
+            @include min-lg{
+                height: 50vh;
+            }
+            h2{
+                font-size: 60px;
+                text-transform: capitalize;
+                font-weight: 800;
+                margin: 30px 0;
+                @include max-xs{
+                    font-size: 35px;
+                    margin: 10px 0;
+                    font-weight: 600;
+                    line-height: 40px;
+                }
+                @include min-sm{
+                   font-size: 35px;
+                   margin: 15px 0;
+                }
+                @include min-md{
+                   font-size: 40px;
+                   margin: 15px 0;
+                }
+            }
+            h5{
+                font-size: 30px;
+                @include max-xs{
+                    font-size: 18px;
+                    margin-top: 20px;
+                }
+                @include min-sm{
+                   font-size: 22px;
+                }
+                @include min-md{
+                   font-size: 25px;
+                }
+            }
+            .banner-btn{
+                a{
+                    margin:30px 10px 0;
+                    @include max-xs{
+                       font-size: 16px;
+                       
+                    }
+                    @include min-sm{
+                        font-size: 14px;
+                        margin: 15px 10px 0;
+                     }
+                    @include min-md{
+                        font-size: 16px;
+                        margin: 15px 10px 0;
+                     }
+                }
+            }
+        }
+    }
+    .slick-arrow{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $primary_color;
+        width: 50px;
+        height: 50px;
+        border: 0;
+        z-index: 2;
+        transition: .3s;
+        cursor: pointer;
+        @include max-xs{
+            display: none;
+            visibility: hidden;
+        }
+        @include min-sm{
+            display: none;
+        }
+        @include min-md{
+           width: 40px;
+           height: 30px;
+         }
+        button{
+            background-color: $primary_color;
+        }
+        i{
+            color: $white;
+            font-size: 25px;
+            @include min-md{
+                font-size: 22px;
+             }
+           
+        }
+        &.slick-prev{
+            left: 50px;
+        }
+        &.slick-next{
+            right: 50px;
+        }
+        &:hover{
+            background-color: $black;
+        }
+    }
+}

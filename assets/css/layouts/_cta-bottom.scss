@@ -1,0 +1,46 @@
+.cta-bottom-area{
+    padding: 50px 0;
+    background-color: $primary_color;
+    color: $white;
+    @include max-xs{
+        [class*="col-"]{
+            margin-top: 10px;
+        }
+    }
+    
+    h2{
+        text-align: right;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 50px;
+        font-weight: 700;
+        @include max-xs{
+           text-align: center;
+           font-size: 35px;
+        }
+        @include min-sm{
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    a{
+        color: $white;
+        display: block;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 8px 0;
+        @include max-xs{
+         text-align: center;
+           font-size: 16px;
+          }
+        
+        
+        @include min-sm{
+            font-size: 16;
+            font-weight: 400;
+        }
+        i{
+            margin-right: 5px;
+        }
+    }
+}

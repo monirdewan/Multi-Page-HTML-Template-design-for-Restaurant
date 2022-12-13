@@ -1,0 +1,29 @@
+.gallery-area{
+    .single-gallery{
+        margin-bottom: 30px;
+        position:relative;
+        overflow: hidden;
+       
+        img{
+            width: 100%;
+        }
+        &:hover{
+           &:before,&:after{
+            width: 50%;
+           }
+        }
+        &:before,&:after{
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 100%;
+            background-color: $black;
+            transition: .3s;
+            opacity: .85;
+        }
+        &:after{
+            right: 0;
+        }
+    }
+}
+
